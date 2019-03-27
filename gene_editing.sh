@@ -19,31 +19,16 @@ do
 		c2=$2
 		c3=$3
 		
-		if [ "${c2}" == "Kevin" ]; then
-			HDR="\n@SQ\tSN:KH\tLN:200\n@RG\tID:Kevin\tPL:ILLUMINA\tSM:Kevin"
-			REFERENCE=KH_corrected_15apr2016.fa
+		# Reza CCR5 - LONG
+		if [ "${c2}" == "Reza_CCR5" ]; then
+			HDR="\n@SQ\tSN:RS_CCR5\tLN:253\n@RG\tID:Reza\tPL:ILLUMINA\tSM:Reza"
+			REFERENCE=RS_CCR5_07mar2018.fa
 		fi
 
-		if [ "${c2}" == "Olivier" ]; then
-			HDR="\n@SQ\tSN:OH\tLN:232\n@RG\tID:Olivier\tPL:ILLUMINA\tSM:Olivier"
-			REFERENCE=OH_corrected_13jan2015.fa
-		fi
-		
-		if [ "${c2}" == "Olivier_HbG" ]; then
-			HDR="\n@SQ\tSN:OH_HbG\tLN:213\n@RG\tID:Olivier\tPL:ILLUMINA\tSM:Olivier"
-			REFERENCE=OH_HbG_16sep2016.fa
-		fi
-		
-		# Chris MegaTal
-		if [ "${c2}" == "Chris_CCR5" ]; then
-			HDR="\n@SQ\tSN:CP_CCR5\tLN:220\n@RG\tID:Chris\tPL:ILLUMINA\tSM:Chris"
-			REFERENCE=CP_CCR5_11jan2017.fa
-		fi
-
-		# Chris ZFN
-		if [ "${c2}" == "Chris_CCR5-2" ]; then
-			HDR="\n@SQ\tSN:CP_CCR5-2\tLN:166\n@RG\tID:Chris\tPL:ILLUMINA\tSM:Chris"
-			REFERENCE=CP_CCR5-2_14feb2017.fa
+		# Reza CCR5 - SHORT
+		if [ "${c2}" == "Reza_CCR5-2" ]; then
+			HDR="\n@SQ\tSN:RS_CCR5-2\tLN:157\n@RG\tID:Reza\tPL:ILLUMINA\tSM:Reza"
+			REFERENCE=RS_CCR5_01may2018.fa
 		fi
 
 		### Copy Reference
