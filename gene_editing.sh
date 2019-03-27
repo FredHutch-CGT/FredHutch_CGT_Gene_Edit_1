@@ -30,6 +30,12 @@ do
 			HDR="\n@SQ\tSN:RS_CCR5-2\tLN:157\n@RG\tID:Reza\tPL:ILLUMINA\tSM:Reza"
 			REFERENCE=RS_CCR5_01may2018.fa
 		fi
+		
+		# Reza Globin locus
+		if [ "${c2}" == "Reza_HbG" ]; then
+			HDR="\n@SQ\tSN:RS_HbG\tLN:133\n@RG\tID:Reza\tPL:ILLUMINA\tSM:Reza"
+			REFERENCE=RS_HbG_20aug2018.fa
+		fi
 
 		### Copy Reference
 		cp ~/Resources/$REFERENCE ./
