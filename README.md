@@ -9,7 +9,7 @@ a custom python script is run to filter reads for quality
 
 needle from EMBOSS is run to compare reads to a given reference sequence
 
-some command line editing is run aon the needle output(SAM)
+some command line editing is run on the needle output(SAM)
 
 picard-tools SamFormatConverter is used to convert SAM to BAM
 
